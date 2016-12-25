@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/c6_01_bluetooth_01" />
+            <option value="$PROJECT_DIR$/c6_02_bluetooth_02_device" />
+            <option value="$PROJECT_DIR$/c6_03_bluetooth_03_data" />
+            <option value="$PROJECT_DIR$/c6_04_bluetooth_04_profile" />
+            <option value="$PROJECT_DIR$/c6_05_bluetooth_05_demo" />
+            <option value="$PROJECT_DIR$/c7_ble_01_proj_fangdiuqi" />
+            <option value="$PROJECT_DIR$/c8_ble_01_l_central" />
+            <option value="$PROJECT_DIR$/c9_demo_chrisBLECentral" />
+            <option value="$PROJECT_DIR$/c9_p_bLEPeripheral" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

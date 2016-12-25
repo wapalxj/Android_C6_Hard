@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BT2_device</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="visiblity">打开可见</string>
+    <string name="find_device">查找设备</string>
+    <string name="bonded_device">已绑定设备</string>
+</resources>

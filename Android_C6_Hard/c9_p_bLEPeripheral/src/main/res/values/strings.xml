@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BLE Peripheral</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ble_not_supported">ble_not_supported</string>
+    <string name="bluetooth_not_supported">Bluetooth not support</string>
+    
+    <!-- AdvertiseCallback errorCode -->
+    <string name="advertise_failed_data_too_large">Failed to start advertising as the advertise data to be broadcasted is larger than 31 bytes.</string>
+    <string name="advertise_failed_too_many_advertises">Failed to start advertising because no advertising instance is available.</string>
+    <string name="advertise_failed_already_started">Failed to start advertising as the advertising is already started</string>
+    <string name="advertise_failed_internal_error">Operation failed due to an internal error</string>
+    <string name="advertise_failed_feature_unsupported">This feature is not supported on this platform</string>
+
+</resources>
