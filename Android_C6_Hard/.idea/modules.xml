@@ -4,12 +4,15 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_C6_Hard.iml" filepath="$PROJECT_DIR$/Android_C6_Hard.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c0_bluetoothlegatt_google_sample/c0_bluetoothlegatt_google_sample.iml" filepath="$PROJECT_DIR$/c0_bluetoothlegatt_google_sample/c0_bluetoothlegatt_google_sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/c6_01_bluetooth_01/c6_01_bluetooth_01.iml" filepath="$PROJECT_DIR$/c6_01_bluetooth_01/c6_01_bluetooth_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/c6_02_bluetooth_02_device/c6_02_bluetooth_02_device.iml" filepath="$PROJECT_DIR$/c6_02_bluetooth_02_device/c6_02_bluetooth_02_device.iml" />
       <module fileurl="file://$PROJECT_DIR$/c6_03_bluetooth_03_data/c6_03_bluetooth_03_data.iml" filepath="$PROJECT_DIR$/c6_03_bluetooth_03_data/c6_03_bluetooth_03_data.iml" />
       <module fileurl="file://$PROJECT_DIR$/c6_04_bluetooth_04_profile/c6_04_bluetooth_04_profile.iml" filepath="$PROJECT_DIR$/c6_04_bluetooth_04_profile/c6_04_bluetooth_04_profile.iml" />
       <module fileurl="file://$PROJECT_DIR$/c6_05_bluetooth_05_demo/c6_05_bluetooth_05_demo.iml" filepath="$PROJECT_DIR$/c6_05_bluetooth_05_demo/c6_05_bluetooth_05_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c7_ble_00_bLEDemo/c7_ble_00_bLEDemo.iml" filepath="$PROJECT_DIR$/c7_ble_00_bLEDemo/c7_ble_00_bLEDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/c7_ble_01_proj_fangdiuqi/c7_ble_01_proj_fangdiuqi.iml" filepath="$PROJECT_DIR$/c7_ble_01_proj_fangdiuqi/c7_ble_01_proj_fangdiuqi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c7_ble_02_byd_btkey/c7_ble_02_byd_btkey.iml" filepath="$PROJECT_DIR$/c7_ble_02_byd_btkey/c7_ble_02_byd_btkey.iml" />
       <module fileurl="file://$PROJECT_DIR$/c8_ble_01_l_central/c8_ble_01_l_central.iml" filepath="$PROJECT_DIR$/c8_ble_01_l_central/c8_ble_01_l_central.iml" />
       <module fileurl="file://$PROJECT_DIR$/c9_demo_chrisBLECentral/c9_demo_chrisBLECentral.iml" filepath="$PROJECT_DIR$/c9_demo_chrisBLECentral/c9_demo_chrisBLECentral.iml" />
       <module fileurl="file://$PROJECT_DIR$/c9_p_bLEPeripheral/c9_p_bLEPeripheral.iml" filepath="$PROJECT_DIR$/c9_p_bLEPeripheral/c9_p_bLEPeripheral.iml" />

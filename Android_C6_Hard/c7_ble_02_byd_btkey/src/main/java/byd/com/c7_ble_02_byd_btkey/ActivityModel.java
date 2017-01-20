@@ -1,12 +1,9 @@
-package byd.com.c8_ble_01_l_central;
+package byd.com.c7_ble_02_byd_btkey;
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
-import android.bluetooth.le.BluetoothLeScanner;
-import android.bluetooth.le.ScanCallback;
-import android.bluetooth.le.ScanResult;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -17,34 +14,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
-    TextView tv;
+/**
+ * 代码模板
+ */
+public class ActivityModel extends AppCompatActivity {
     BluetoothManager mManager;
     BluetoothAdapter mBluetoothAdapter;
     ListView mListView;
-    List<BluetoothDevice> mDevices;
+    List<BluetoothDevice> devices;
     DeviceAdapter mDeviceAdapter;
-    BluetoothLeScanner mBluetoothLeScanner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //        getSupportActionBar().hide();
-        initView();
         init();
+        initView();
     }
 
     private void initView() {
-        tv= (TextView) findViewById(R.id.tv);
         mListView= (ListView) findViewById(R.id.deviceList);
-        mDevices =new ArrayList<>();
-        mDeviceAdapter=new DeviceAdapter(mDevices,this);
+        devices=new ArrayList<>();
+        mDeviceAdapter=new DeviceAdapter(devices,this);
         mListView.setAdapter(mDeviceAdapter);
     }
 
@@ -55,47 +51,20 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    ScanCallback mScanCallback=new ScanCallback() {
-        @Override
-        public void onScanResult(int callbackType, ScanResult result) {
-            BluetoothDevice device=result.getDevice();
-            if(!mDevices.contains(device)){
-                mDevices.add(device);
-            }
-            mDeviceAdapter.notifyDataSetChanged();
-            super.onScanResult(callbackType, result);
-        }
-
-        @Override
-        public void onScanFailed(int errorCode) {
-            tv.setText("扫描失败"+errorCode);
-            super.onScanFailed(errorCode);
-        }
-
-        @Override
-        public void onBatchScanResults(List<ScanResult> results) {
-            super.onBatchScanResults(results);
-        }
-    };
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.scan:
-                if(mBluetoothLeScanner==null){
-                    mBluetoothLeScanner=mBluetoothAdapter.getBluetoothLeScanner();
-                }
-                Toast.makeText(this, "扫描", Toast.LENGTH_LONG).show();
-                mBluetoothLeScanner.startScan(mScanCallback);
+
                 break;
             case 0:
                 break;
-            default:
+             default:
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
-
+    
     private  void init(){
         if (Build.VERSION.SDK_INT>=23)
         {
@@ -111,15 +80,9 @@ public class MainActivity extends AppCompatActivity {
         mBluetoothAdapter=mManager.getAdapter();
         if(mBluetoothAdapter==null){
             Toast.makeText(this, "当前设备不支持蓝牙", Toast.LENGTH_LONG).show();
-            return;
         }
-        if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
-            tv.setText("当前设备不支持BLE");
+        if(!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)){
             Toast.makeText(this, "当前设备不支持BLE", Toast.LENGTH_LONG).show();
         }
-
-//        Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-//        startActivityForResult(intent, 11);
-        mBluetoothAdapter.enable();
     }
 }

@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
 
 //                            bluetoothGatt.connect();//重连，但是效率非常低
                             //重连:再次进行扫描
-                            mAdapter.stopLeScan(mScanCallback);
+                            mAdapter.startLeScan(mScanCallback);
                             break;
                         case BluetoothGatt.STATE_DISCONNECTING:
                             //正在断开
@@ -346,6 +346,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
             super.onCharacteristicChanged(gatt, characteristic);
+            Log.e("999999999","收到响应");
             if(characteristic.getUuid().toString().equals(notifyCharacteristic.getUuid().toString())){
                 Log.e("onCharacteristicChanged","notify: "+ bytes2HexString(notifyCharacteristic.getValue()));
                 byte[] values=characteristic.getValue();

@@ -1,3 +1,4 @@
-include ':app', ':c6_01_bluetooth_01', ':c6_02_bluetooth_02_device', ':c6_03_bluetooth_03_data', ':c6_04_bluetooth_04_profile', ':c6_05_bluetooth_05_demo', ':c7_ble_01_proj_fangdiuqi', ':c8_ble_01_l_central'
+include ':app', ':c6_01_bluetooth_01', ':c6_02_bluetooth_02_device', ':c6_03_bluetooth_03_data', ':c6_04_bluetooth_04_profile', ':c6_05_bluetooth_05_demo', ':c7_ble_01_proj_fangdiuqi', ':c8_ble_01_l_central', ':c0_bluetoothlegatt_google_sample', ':c7_ble_02_byd_btkey'
 include ':c9_demo_chrisBLECentral'
 include ':c9_p_bLEPeripheral'
+include ':c7_ble_00_bLEDemo'
